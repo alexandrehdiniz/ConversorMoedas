@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="conversor">
+        <div class="conversor-container">
+            <h1>Conversor de Moedas</h1>
+            <div class="input-value">
+                <input type="number" name="value" id="value" placeholder="Digite um valor!" step="0.01">
+            </div>
+            <div class="select-moeda">
+                <select id="moeda-origem"></select>
+                <select id="moeda-destino"></select>
+            </div>
+            <div class="button-convert">
+                <button id="swap"><i class="fa-solid fa-arrows-rotate"></i></button>
+                <button onclick="converter()">Converter</button>
+            </div>
+            <div id="resultado" class="resultado">Aguardando resultado...</div>
+        </div>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
